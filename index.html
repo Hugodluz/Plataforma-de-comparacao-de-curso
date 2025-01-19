@@ -5,74 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniChoice</title>
     <link rel="stylesheet"href="style.css">
-
-
 </head>
 <body>
     <!--Cabeçalho-->
-    <header>
+    <header class="site-header">
         <div class="logo">
             <img src="assests/logo.webp"alt="Logo do site">
         </div>
-        <nav>
-            <ul><a href="index.html">Home</a></ul>
-            <li><a href="contactos.html">Contactos</a></li>
-            <li><a href="sobre.html"></a></li>
-        </ul>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
         </nav>
     </header>
-    <!--Seção hero-->
+
+    <!--Seção Hero-->
     <section class="hero">
-        <h1>Bem vindo ao UniChoice</h1>
-        <p>Descubra e compare cursos univertários nas diversas áreas de estudo</p>
-        <form>
-            <input type="text" placeholder="Procure cursos, universidades...">
-            <button type="submit">Pesquisar</button>
-        </form>
+        <div class="hero-content">
+            <h1>Bem-vindo ao UniChoice</h1>
+            <p>Descubra e compare cursos universitario nas diversas áreas de estudo</p>
+            <form>
+                <input type="text"placeholder="Procure cursos,universidades...">
+                <button type="submit">Pesquisar</button>
+            </form>
+
+        </div>
     </section>
+
     <!--Categorias de Cursos-->
     <main>
-        <section class="Categoria">
-            <h2>Engenharias</h2>
-            <div class="lista-cursos">
-                <div class="curso-item">
+        <!--Categoria:Engenharia-->
+        <section class="category-section">
+            <h2 class="category-title">Engenharias</h2>
+            <div class="course-grid">
+                <div class="course-card">
                     <h3>Engenharia Civil</h3>
-                    <p>Conheça os detalhes do curso e compare com outras opções.</p>
+                    <p>Conheça os detalhes do curso e compare com outras opções</p>
                 </div>
-                <div class="curso-item">
+                <div class="course-card">
                     <h3>Engenharia Informática</h3>
                     <p>Explore conteúdos e escolha a melhor universidade para ti.</p>
-                    <div class="curso-item">
-                        <h3>Engenharia Ambiental</h3>
-                        <p>Informações precisas sobre o futuro da Engenharia Ambiental</p>
-                    </div>
-                    <div class="curso-item">
-                        <h3>Engenharia </h3>
-                    </div>
-
+                </div>
+                <div class="course-card">
+                    <h3>Bioengenharia</h3>
+                    <p>O O principal objetivo da Licenciatura em Bioengenharia é o de preparar recursos humanos com capacidade para abordarem de uma forma multidisciplinar problemas</p>
 
                 </div>
             </div>
         </section>
-        <section class="Categoria">
-            <h2>Saúde</h2>
-            <div class="lista-cursos">
-                <div class="curso-item">
+
+        <!--Categoria: Saúde-->
+        <section class="category-section">
+            <h2 class="category-title">Saúde</h2>
+            <div class="course-grid">
+                <div class="course-card">
                     <h3>Medicina</h3>
-                    <p>Informações completas sobre as melhores faculdades de medicina.</p>
+                    <p>Informações completas sobre as melhores faculdades de Medicina </p>
 
                 </div>
-                <div class="curso-item">
+                <div class="course-card">
                     <h3>Enfermagem</h3>
-                    <p>Descubra oportunidades e instiuições disponíveis.</p>
+                    <p>Descubra oportunidades e instituições disponíveis</p>
+                </div>
+                <div class="course-card">
+                    <h3>Ciências Farmacêuticas</h3>
+                    <p>As Ciências Farmacêuticas, pela sua abrangencia
+                         e multidisciplinaridade, são uma área científica de enorme relevo no âmbito das Ciências da Saúde.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Higene Oral</h3>
+                    <p>Esta licenciatura visa preparar profissionais clinicamente aptos para administrar cuidados de prevenção
+                        em Higiene Oral a utentes de todas as idades.
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <!--Categoria: Direito-->
+        <section class="category-section">
+            <h2 class="category-title"> Direito</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>Administração Público-Privada</h3>
+                    <p>A Licenciatura em Administração Público-Privada destina-se a conferir aos estudantes uma formação
+                         rigorosa nos estudos em Administração</p>
+                </div>
+                <div class="course-card">
+                    <h3>Criminologia e Justiça Criminal</h3>
+                    <p>Proporciona ao licenciado uma sólida perspetiva do fenômeno criminal e dos fatores a ele inerentes</p>
+                </div>
+                <div class="course-card">
+                    <h3>Direito</h3>
+                    <p>Esta licenciatura visa dotar os seus alunos dos instrumentos necessários à abordagem, compreensão e tratamento dos fenómenos jurídicos.</p>
                 </div>
             </div>
         </section>
     </main>
+
     <!--Rodapé-->
-    <footer>
-        <p>2025 UniChoice portal de comparação de cursos.</p>
+    <footer class="site-footer">
+        <p>2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
     
 </body>
