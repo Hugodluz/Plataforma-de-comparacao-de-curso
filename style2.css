@@ -1,130 +1,199 @@
-/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    margin: 0;
+}
+.nav-link {
+    color:#ddd !important
+}
+.navbar-toggler-icon {
+    background-image: #ddd !important;
+}
+.bg_body {
+    background-color:#333 !important;
+}
+.navbar-brand img {
+    width: 150px;
 }
 
-a{
-    text-decoration: none;
-    color: #007BFF;
-}
+/*Cabeçalho*/
 
-ul{
-    list-style: none;
-    padding: 0;
-}
-
-/* Cabeçalho */
-header{
-    background-color: #0056b3;
-    color: #fff;
-    padding: 15px 20px;
+.site-header{
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid #f04c4c;
 
 }
 
-header .logo img{
-    max-height: 50px;
+.site-header .logo img{
+    height: 50px;
+    width: auto;
 }
 
-header nav ul{
+.nav-menu ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
-
+    gap: 15px;
 }
 
-header nav ul li{
-    display: inline;
-}
-
-header nav ul li a {
+.nav-menu ul li a {
+    text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
 }
 
-/* Hero */
-.hero{
-    background-color: #007Bff;
+.nav- menu ul li a:hover {
+    background-color: #f04c4c;
+    border-radius: 4px;
+}
+
+/*Seção hero */
+.hero {
+    background-color: #f04c4c;
     color: #fff;
     text-align: center;
-    padding: 50px 20px;
-
-
+    padding: 60px 20px;
 }
 
-.hero h1{
-    font-size: 2.5em;
+.main {
+    padding-top: 400px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.hero p{
-    font-size: 1.2em;
+.hero p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-/* Detalhes do Curso */
-.course-details{
-    max-width: 800px;
-    margin: 30px auto;
+.hero form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero input[type = "text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    border-radius: 4px;
+}
+
+.hero button{
     background-color: #fff;
+    color:#f04c4c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+}
+
+.hero button:hover {
+    background-color: #ffe0e0;
+
+}
+
+/* Categorias */
+.category-section{
+    margin: 40px 10%;
+}
+
+.category-title{
+    font-size: 1.8rem;
+    color: #f04c4c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f04c4c;
+    display: inline-block;
+
+}
+
+.course-grid{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,300px);
+    gap: 10px;
+
+}
+
+.course-card{
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.course-details h2{
-   font-size: 2em;
-   margin-bottom: 15px;
-   color: #0056b3;
-   border-bottom: 2px solid #f0f0f0;
-   padding-bottom: 5px;
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.course-details h3{
-    font-size: 1.5em;
-    margin: 20px 0 10px;
-    color: #333;
-}
-
-.course-details p{
-    margin-bottom: 15px;
-    line-height: 1.8;
-}
-
-.course-details ul{
-    margin: 10px 0 20px;
-    padding-left: 20px;
-}
-
-.course-details ul li {
+.course-card h3{
+    font-size: 1.2rem;
+    color:#333;
     margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
 }
 
-.course-details ul li ::before{
-    content:"✔" ;
-    position: absolute;
-    left: 0;
-    color: #007BFF;
-    font-size: 1.2em;
+.course-card p{
+    font-size: 0.95rem;
+    color:#666;
 }
 
-/*Rodapé*/
+/* Rodapé */
 .site-footer{
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 15px 10px;
+    border-top: 4px solid #f04c4c;
+    margin-top: 300px;
 }
+
 .site-footer p{
-    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+
+@media(max-width:768px) {
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+    .hero input[type="text"]{
+        width:80%
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .category-section {
+        margin: 20px 5%;
+    }
 }
