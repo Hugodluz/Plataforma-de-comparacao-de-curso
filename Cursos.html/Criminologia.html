@@ -4,80 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criminologia e Justiça Criminal</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Criminologia e Justiça Criminal</h1>
-        <p>O curso de Criminologia e Justiça Criminal em Portugal é uma formação interdisciplinar que
-            explora o comportamento criminoso, o sistema de justiça e as estratégias de prevenção e combate ao crime.
-        </p>
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/11195129/11195129-sd_960_506_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Criminologia e Justiça Criminal</h1>
+            <p class="lead">O curso de Criminologia e Justiça Criminal explora o comportamento criminoso, o sistema de justiça e estratégias de prevenção e combate ao crime.</p>
+        </div>
     </section>
 
     <!--Informações do Curso-->
-
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p>O curso de Criminologia e Justiça Criminal em Portugal aborda os fenômenos do crime, suas causas e consequências, explorando o funcionamento do sistema de justiça criminal. 
-                Trata-se de uma formação interdisciplinar que une áreas como sociologia, direito, psicologia e políticas públicas, capacitando os estudantes a analisar e resolver desafios relacionados à segurança pública e à justiça.
-            </p>
-            <p>
-                <h3>Objectivo do Curso:</h3>
-                <ol>Desenvolver conhecimentos teóricos sobre o comportamento criminal, as dinâmicas sociais que influenciam o crime e as políticas de prevenção;</ol>
-                <ol>Proporcionar uma compreensão profunda do funcionamento do sistema de justiça criminal, incluindo polícia, tribunais e prisões;</ol>
-                <ol>Capacitar os estudantes para aplicar métodos de investigação científica e análise de dados na resolução de problemas criminais;</ol>
-                <ol>Preparar profissionais para intervir em contextos de prevenção, reintegração social e formulação de políticas públicas de segurança;</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p> O curso de Enfermagem em Portugal tem uma duração típica de <strong>3 anos</strong>, anos (ou seja, 6 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para um <strong>Mestrado</strong> a duração é de 2 anos adicionais (120 ECTS), focando em especialização avançada e investigação científica.</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Investigação em Ciências Criminais;</li>
-                <li>Consultor de Segurança Pública e Privada;</li>
-                <li>Analista de Políticas Criminais;</li>
-                <li>Gestor de Projetos de Reintegração Social;</li>
-                <li>Perito em Comportamento Criminal;</li>
-                <li>Investigador em Organizações Não-Governamentais (ONGs);</li>
-                <li>Carreiras em forças policiais, serviços prisionais e órgãos de segurança do Estado.</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">O curso de Criminologia e Justiça Criminal aborda fenômenos como o comportamento criminoso e o funcionamento do sistema de justiça, unindo áreas como sociologia, direito, psicologia e políticas públicas.</p>
+
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Desenvolver conhecimentos teóricos sobre o comportamento criminal e políticas de prevenção.</li>
+                <li class="list-group-item">Proporcionar uma compreensão profunda do sistema de justiça criminal, incluindo polícia, tribunais e prisões.</li>
+                <li class="list-group-item">Capacitar para aplicar métodos de investigação científica na resolução de problemas criminais.</li>
+                <li class="list-group-item">Preparar profissionais para intervir em contextos de reintegração social e formulação de políticas públicas de segurança.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
-
-            <li><strong>Universidade de Lisboa </strong>- Instituto Superior de Ciências Sociais e Políticas (ISCSP)</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade de Direito</li>
-            <li><strong>Universidade de Coimbra</strong>- - Faculdade de Economia</li>
-            <li><strong>Universidade do Minho</strong> - Escola de Direito</li>
-            <li><strong>Universidade Fernando Pessoa</strong>- Faculdade de Ciências Humanas e Sociais</li>
-            <li><strong>Universidade Autónoma de Lisboa </strong>- Departamento de Direito</li>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p> O curso de Criminologia e Justiça Criminal tem uma duração típica de <strong>3 anos</strong>, no caso da Licenciatura, conforme o Processo de Bolonha.</p>
+            <p>Para um <strong>Mestrado</strong> a duração é de 2 anos adicionais (120 ECTS).</p>
             
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Investigação em Ciências Criminais</li>
+                <li class="list-group-item">Consultor de Segurança Pública e Privada</li>
+                <li class="list-group-item">Analista de Políticas Criminais</li>
+                <li class="list-group-item">Gestor de Projetos de Reintegração Social</li>
+                <li class="list-group-item">Perito em Comportamento Criminal</li>
+                <li class="list-group-item">Carreiras em forças policiais, serviços prisionais e órgãos de segurança do Estado</li>
+            </ul>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Instituto Superior de Ciências Sociais e Políticas (ISCSP)</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Direito</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Direito</li>
+                <li class="list-group-item"><strong>Universidade Fernando Pessoa</strong> - Faculdade de Ciências Humanas e Sociais</li>
+                <li class="list-group-item"><strong>Universidade Autónoma de Lisboa</strong> - Departamento de Direito</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
