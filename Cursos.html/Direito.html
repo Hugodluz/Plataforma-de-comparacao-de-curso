@@ -4,88 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direito</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Direito</h1>
-        <p>
-         O curso de Direito em Portugal forma profissionais aptos a interpretar, aplicar e construir normas jurídicas, promovendo a justiça e a resolução de conflitos em uma sociedade dinâmica e complexa.
-        </p>
-    </section>
-    <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/direito.mp4"type="video/mp4">
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/6101361/6101361-sd_506_960_30fps.mp4" type="video/mp4">
         </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Direito</h1>
+            <p class="lead">O curso de Direito em Portugal oferece uma formação abrangente que capacita os alunos a entender e interpretar as leis, regulando as relações entre indivíduos e instituições dentro da sociedade.</p>
         </div>
+    </section>
 
     <!--Informações do Curso-->
-
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p>
-                O curso de Direito em Portugal prepara os estudantes para compreenderem e atuarem no complexo sistema jurídico, desenvolvendo habilidades analíticas, argumentativas e práticas essenciais para o exercício da advocacia e outras funções jurídicas. 
-                Durante o curso, os alunos têm acesso a disciplinas fundamentais como Direito Civil, Penal, Constitucional, Empresarial e Internacional.
-            </p>
-            <p>
-               <h3>Objectivo do Curso:</h3> 
-                <ol>Formar profissionais com sólidos conhecimentos teóricos e práticos para interpretar e aplicar o Direito em diferentes contextos;</ol>
-                <ol>Desenvolver competências argumentativas e analíticas para a resolução de conflitos e formulação de soluções jurídicas inovadoras;</ol>
-                <ol>Capacitar para atuar em diversas áreas do sistema jurídico, incluindo advocacia, magistratura, notariado e consultoria;</ol>
-                <ol>Proporcionar uma base ética e humanista para a promoção da justiça e defesa dos direitos fundamentais;</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p> O curso de Enfermagem em Portugal tem uma duração típica de <strong>4 anos</strong>, anos (ou seja, 8 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para um <strong>Mestrado em Direito</strong> a duração é de 2 anos adicionais (120 ECTS),permitindo a especialização em áreas específicas como Direito Penal, Internacional ou Comercial.</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Advocacia;</li>
-                <li>Magistratura Judicial ou do Ministério Público;</li>
-                <li>Consultoria Jurídica;</li>
-                <li>Notariado e Registros Públicos;</li>
-                <li>Mediação e Arbitragem;</li>
-                <li>Carreiras em Organizações Internacionais;</li>
-                <li>Investigação Acadêmica em Direito;</li>
-                <li>Gestão Jurídica em Empresas.</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">O curso de Direito tem como objetivo fornecer aos estudantes uma sólida base teórica e prática em áreas como direito constitucional, direito penal, direito civil, direito empresarial, e direitos humanos. Além disso, oferece uma compreensão detalhada dos sistemas jurídicos nacionais e internacionais, preparando os alunos para a prática legal em diversos contextos.</p>
+
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Proporcionar uma formação sólida nos princípios básicos do Direito e suas ramificações.</li>
+                <li class="list-group-item">Capacitar os alunos para o exercício da advocacia, consultoria jurídica e atuação em tribunais.</li>
+                <li class="list-group-item">Desenvolver habilidades práticas em interpretação e aplicação das leis.</li>
+                <li class="list-group-item">Formar profissionais aptos a lidar com questões jurídicas em diversos setores da sociedade, desde o direito público ao privado.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
-
-            <li><strong>Universidade de Lisboa </strong>- Faculdade de Direito</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade de Direito</li>
-            <li><strong>Universidade de Coimbra</strong>- - Faculdade de Direito</li>
-            <li><strong>Universidade de Nova Lisboa</strong> - Faculdade de Direito</li>
-            <li><strong>Universidade do Minho</strong>- Faculdade de Direito</li>
-            <li><strong>Universidade Católica Portuguesa </strong>- Departamento de Direito</li>
-            <li><strong>Universidade de Evora </strong>- Escola de Direito</li>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p>O curso de Direito tem uma duração típica de <strong>5 anos</strong> (10 semestres), com uma sólida base teórica e a prática jurídica aplicada ao longo do curso.</p>
+            <p>Após o curso de Licenciatura, os estudantes podem optar por um <strong>Mestrado</strong> em áreas específicas, com duração de 1-2 anos adicionais, dependendo da especialização escolhida.</p>
             
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Advogado(a) ou Advogado(a) Estagiário(a)</li>
+                <li class="list-group-item">Consultor(a) Jurídico(a)</li>
+                <li class="list-group-item">Procurador(a) Público(a)</li>
+                <li class="list-group-item">Juiz(a) ou Magistrado(a)</li>
+                <li class="list-group-item">Notário(a) ou Registrador(a)</li>
+                <li class="list-group-item">Assessor(a) Jurídico(a) de empresas ou órgãos públicos</li>
+                <li class="list-group-item">Carreiras no setor público, como defensor público, promotor de justiça, entre outros.</li>
+            </ul>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Faculdade de Direito</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Direito</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Direito</li>
+                <li class="list-group-item"><strong>Universidade Nova de Lisboa</strong> - Faculdade de Direito</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Direito</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
