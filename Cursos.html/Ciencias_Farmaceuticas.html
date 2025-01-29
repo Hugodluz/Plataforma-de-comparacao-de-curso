@@ -3,86 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciências Farmaceuticas</title>
-    <link rel="stylesheet"href="style2.css">
+    <title>Ciencias Farmaceuticas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Ciências Farmaceuticas</h1>
-        <p>O curso de Higiene Oral visa formar profissionais especializados em cuidados de prevenção e promoção de saúde bucal. 
-            O licenciado em Higiene Oral tem um papel essencial na prevenção de doenças dentárias e na promoção de hábitos saudáveis. 
-        </p>
-    </section>
-    <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/farmaceuticas.mp4"type="video/mp4">
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/5741026/5741026-sd_360_640_30fps.mp4" type="video/mp4">
         </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Ciencias Farmaceuticas</h1>
+            <p class="lead">O curso de Ciências Farmacêuticas prepara profissionais para atuar em diversas áreas da saúde, com foco no desenvolvimento e na aplicação de medicamentos.</p>
         </div>
+    </section>
 
     <!--Informações do Curso-->
-
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p> O curso de Ciências Farmacêuticas combina conhecimentos de Ciências da Saúde com a área de farmacologia, 
-                farmacotecnologia e gestão de medicamentos, preparando profissionais para atuar no desenvolvimento, análise e distribuição de produtos farmacêuticos. 
-                Os graduados têm um papel fundamental na promoção da saúde, com um enfoque na prevenção de doenças e no aconselhamento terapêutico
-            </p>
-            <p>
-                Objectivo do Curso:
-                <ol>Formar profissionais capacitados para a pesquisa, desenvolvimento e produção de medicamentos e produtos farmacêuticos;</ol>
-                <ol>Capacitar os estudantes a exercer a profissão de farmacêutico com enfoque em saúde pública e hospitalar;</ol>
-                <ol>Desenvolver competências na área da farmácia comunitária e hospitalar, com ênfase na prestação de cuidados e aconselhamento aos pacientes;</ol>
-                <ol>Promover o entendimento da legislação e regulação no setor farmacêutico, com foco na segurança do paciente.</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p> O curso de Ciencias Farmaceuticas em Portugal tem uma duração típica de <strong>5 anos</strong>, anos (ou seja, 10 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para <strong>Mestrado Integrado </strong> se aplicavel a duração média é de 4 a 5 anos(300 ECTS)</p>
-            <p>Para <strong>Mestrado após Licenciatura</strong> a duração são mais dois anos adicionais (120 ECTS)</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Farmácias comunitárias e hospitalares;</li>
-                <li>Indústria farmacêutica;</li>
-                <li>Investigação e desenvolvimento de novos medicamentos e produtos de saúde;</li>
-                <li>Farmácias de hospitais, clínicas e centros de saúde;</li>
-                <li>Consultoria e aconselhamento terapêutico em diversas áreas de saúde.</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">O curso de Ciências Farmacêuticas em Portugal oferece formação científica sólida em farmacologia, química, farmacocinética e tecnologias farmacêuticas, capacitando os estudantes a atuar na formulação e no uso racional de medicamentos.</p>
+
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Formar profissionais com conhecimento aprofundado sobre medicamentos e suas interações no organismo.</li>
+                <li class="list-group-item">Desenvolver competências em farmacologia, bioquímica, e farmacotécnica.</li>
+                <li class="list-group-item">Capacitar os estudantes a trabalhar com a promoção da saúde, desenvolvimento de novos fármacos e atenção farmacêutica.;</li>
+                <li class="list-group-item">Fornecer conhecimento em áreas de gestão de farmácias e políticas de saúde pública.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p> O curso de Ciências Farmacêuticas tem uma duração típica de <strong>5 anos</strong> (10 semestres), incluindo um estágio profissional supervisionado.</p>
+            <p>Para um <strong>Mestrado</strong>, a duração é de 2 anos adicionais (120 ECTS), com foco em especializações e investigação avançada.</p>
+            
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Farmacêutico em farmácias comunitárias e hospitalares</li>
+                <li class="list-group-item">Desenvolvimento e pesquisa de medicamentos em indústrias farmacêuticas</li>
+                <li class="list-group-item">Atenção farmacêutica e aconselhamento ao paciente</li>
+                <li class="list-group-item">Gestão de farmácias e unidades de saúde</li>
+                <li class="list-group-item">Consultoria em políticas de saúde pública e regulamentação farmacêutica</li>
+            </ul>
 
-            <li><strong>Universidade de Lisboa</strong> -  Faculdade da Farmacia</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade da Farmacia</li>
-            <li><strong>Universidade de Coimbra</strong>- Faculdade de Ciencias e Tecnologia</li>
-            <li><strong>Universidade de Evora</strong> - Escola de Ciencias e Tecnologia</li>
-            <li><strong>Universidade de Aveiro</strong>- Departamento de Ciencias da Vida</li>
-            <li><strong>Instituto Politecnico de Lisboa</strong> - Escola Superior de Tecnologia da Saúde</li>
-            <li><strong>Instituto Politecnico de Setubal</strong>- Escola Superior de Saúde</li>
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Faculdade de Farmácia</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Ciências da Saúde</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Ciências e Tecnologia</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Ciências</li>
+                <li class="list-group-item"><strong>Universidade Fernando Pessoa</strong> - Faculdade de Ciências da Saúde</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
