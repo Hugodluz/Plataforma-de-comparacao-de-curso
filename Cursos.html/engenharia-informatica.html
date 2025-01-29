@@ -1,82 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engenharia Informática</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+    
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Engenharia Informática</h1>
-        <p> Explore todos os detalhes sobre o curso de Engenharia Civil, suas oportunidades e instituições que oferecem este programa.</p>
-    </section>
-    <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/informatica.mp4"type="video/mp4">
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/11274341/11274341-sd_640_360_25fps.mp4" type="video/mp4">
         </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Engenharia Informatica </h1>
+            <p class="lead">O curso de Engenharia Informática oferece uma formação abrangente nas áreas de programação, sistemas operacionais, redes de computadores e inteligência artificial. Os alunos desenvolvem competências em análise e desenvolvimento de software, além de se prepararem para lidar com as novas tecnologias que moldam o mundo digital. Ao longo do curso, eles também têm a oportunidade de trabalhar em projetos práticos e inovadores.</p>
         </div>
-
-    <!--Informações do Curso-->
-
+    </section
+    <!-- Informações do Curso -->
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p> A Engenharia Informática usa a ciência e a tecnologia para resolver problemas concretos da sociedade,
-             em particular, no desenho e implementação de sistemas baseados em software, na definição de novas formas de utilizar as tecnologias de
-             informação e na resolução efectiva de problemas computacionais.
-            </p>
-            <h3>Objectivo do Curso</h3>
-            <ol>Formar profissionais com competências técnicas para criar e gerir software, hardware e redes de comunicação;</ol>
-            <ol>Capacitar os estudantes a resolverem problemas complexos utilizando métodos computacionais e matemáticos avançados;</ol>
-            <ol>Promover o domínio de ferramentas e linguagens de programação para desenvolvimento de sistemas e aplicações;</ol>
-            <ol>Estimular a inovação tecnológica com foco em inteligência artificial, análise de dados e segurança da informação.</ol>
-           
-            <h3>Duração do Curso</h3>
-            <p> O curso de Engenharia Informática possui uma duração de <strong>3 anos</strong>, dividido em 6 semestres, com formação teórica e prática.</p>
-            <p>Para <strong>Mestrado Integrado </strong> se aplicavel a duração média é de 5 anos(300 ECTS)</p>
-            <p>Para <strong>Mestrado após Licenciatura</strong> a duração são mais dois anos adicionais</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Desenvolvimento Software</li>
-                <li>Administração de Sistemas de Rede</li>
-                <li>Inteligencia Artificial e Ciência de Dados</li>
-                <li> Gestor de Projectos Tecnologicos</li>
-                <li>Docente ou Investigador em Universidades</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p>O curso de Engenharia Informática prepara os estudantes para criar soluções inovadoras na área de tecnologia da informação. Ele engloba desenvolvimento de software, inteligência artificial, redes, segurança cibernética e muito mais.</p>
+
+            <h3 class="mt-4">Objetivos do Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Desenvolver habilidades em programação e arquitetura de sistemas.</li>
+                <li class="list-group-item">Ensinar conceitos avançados de inteligência artificial e aprendizado de máquina.</li>
+                <li class="list-group-item">Capacitar os alunos a projetar e gerenciar redes de computadores.</li>
+                <li class="list-group-item">Formar especialistas em segurança cibernética e análise de dados.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p>O curso de Engenharia Informática em Portugal tem uma duração típica de <strong>5 anos</strong> (3 anos de licenciatura + 2 anos de mestrado integrado), totalizando 300 ECTS conforme o Processo de Bolonha.</p>
 
-            <li><strong>Universidade de Lisboa</strong> - Instituto Superior Técnico</li>
-            <li><strong>Instituto Superior de Engenharia de Lisboa</strong></li>
-            <li><strong>Instituto Universitário de Lisboa</strong> - (ISCTE)</li>
-            <li><strong>Universidade do Porto</strong> - Faculdade de Engenharia</li>
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Desenvolvedor de Software</li>
+                        <li class="list-group-item">Engenheiro de Redes</li>
+                        <li class="list-group-item">Especialista em Inteligência Artificial</li>
+                        <li class="list-group-item">Analista de Segurança Cibernética</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Gestor de Projetos de TI</li>
+                        <li class="list-group-item">Arquiteto de Sistemas</li>
+                        <li class="list-group-item">Consultor em Tecnologia da Informação</li>
+                        <li class="list-group-item">Professor ou Investigador em Computação</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Engenharia</li>
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Instituto Superior Técnico</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Engenharia</li>
+                <li class="list-group-item"><strong>Universidade de Aveiro</strong> - Departamento de Eletrónica, Telecomunicações e Informática</li>
+                <li class="list-group-item"><strong>Universidade da Beira Interior</strong> - Faculdade de Engenharia</li>
             </ul>
         </section>
     </main>
 
-    <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>copy; 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
