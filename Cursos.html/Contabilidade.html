@@ -4,76 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contabilidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
     <!--Cabeçalho-->
     <header>
-        <div class="logo">
-            <img src="assests/logo.webp" alt="logo do site">
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Contabilidade</h1>
-        <p>O curso de Contabilidade em Portugal prepara profissionais para gerenciar e interpretar informações financeiras, garantindo a saúde financeira de empresas e organizações.</p>
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/6700653/6700653-sd_640_360_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Contabilidade</h1>
+            <p class="lead">O curso de Contabilidade oferece uma formação sólida na área financeira, com foco em gestão e análise de informações contábeis.</p>
+        </div>
     </section>
 
     <!--Informações do Curso-->
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p>O curso de Contabilidade combina conhecimentos de gestão financeira, fiscalidade, auditoria e legislação tributária, capacitando os estudantes a atuar em diferentes setores económicos.</p>
-            <p>
-                <h3>Objetivo do Curso:</h3>
-                <ol>Desenvolver competências técnicas e teóricas em contabilidade, auditoria e finanças;</ol>
-                <ol>Preparar profissionais para garantir a conformidade fiscal e regulamentar de empresas e instituições;</ol>
-                <ol>Capacitar os estudantes a elaborar relatórios financeiros e a realizar análises estratégicas;</ol>
-                <ol>Incentivar uma visão ética e responsável na tomada de decisões financeiras.</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p>O curso de Contabilidade em Portugal tem uma duração típica de <strong>3 anos</strong> (6 semestres), no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para um <strong>Mestrado</strong>, a duração é de 2 anos adicionais (120 ECTS), permitindo especialização em auditoria, fiscalidade ou gestão financeira.</p>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">O curso de Contabilidade prepara os estudantes para trabalhar em áreas como auditoria, finanças, análise contábil e tributária, com enfoque em decisões financeiras dentro das organizações.</p>
 
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Contabilista Certificado</li>
-                <li>Auditor Interno ou Externo</li>
-                <li>Consultor Fiscal</li>
-                <li>Controller Financeiro</li>
-                <li>Analista Financeiro</li>
-                <li>Gestor de Tesouraria</li>
-                <li>Gestor de Risco e Compliance</li>
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Desenvolver conhecimentos teóricos e práticos em contabilidade financeira e gerencial.</li>
+                <li class="list-group-item">Capacitar os estudantes para a análise e interpretação de informações financeiras e contábeis;</li>
+                <li class="list-group-item">Formar profissionais aptos para auditorias e análise de demonstrativos contábeis;</li>
+                <li class="list-group-item">Preparar os alunos para atuar na área tributária e de planejamento financeiro.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
-                <li><strong>Instituto Superior de Contabilidade e Administração de Lisboa (ISCAL)</strong></li>
-                <li><strong>Universidade do Porto</strong> - Faculdade de Economia</li>
-                <li><strong>Universidade de Coimbra</strong> - Faculdade de Economia</li>
-                <li><strong>Instituto Politécnico do Porto</strong> - Escola Superior de Contabilidade</li>
-                <li><strong>Universidade de Aveiro</strong> - Departamento de Economia, Gestão e Engenharia Industrial</li>
-                <li><strong>Universidade Nova de Lisboa</strong> - Nova Information Management School (NOVA IMS)</li>
-                <li><strong>ISCTE - Instituto Universitário de Lisboa</strong> - Departamento de Gestão</li>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p> O curso de Contabilidade e Justiça Criminal tem uma duração típica de <strong>3 anos</strong>, no caso da Licenciatura, conforme o Processo de Bolonha.</p>
+            <p>Para um <strong>Mestrado</strong> a duração é de 2 anos adicionais (120 ECTS).</p>
+            
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Contador</li>
+                <li class="list-group-item">Auditor Interno ou Externo</li>
+                <li class="list-group-item">Analista Financeiro</li>
+                <li class="list-group-item">Consultor Tributário</li>
+                <li class="list-group-item">Gestor de Finanças Corporativas</li>
+                <li class="list-group-item">Carreiras em bancos, empresas de auditoria e organizações financeiras</li>
+            </ul>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> -  Faculdade de Ciências Económicas e Empresariais</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Economia e Gestão</li>
+                <li class="list-group-item"><strong>Universidade Fernando Pessoa</strong> -  Faculdade de Ciências Sociais e Humanas</li>
+                <li class="list-group-item"><strong>Universidade Autónoma de Lisboa</strong> - Departamento de Economia</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>&copy; 2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
 </body>
 </html>
-
-
