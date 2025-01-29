@@ -4,86 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administração Público-Privada</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Administração Público-Privada</h1>
-        <p>O curso de Administração Público-Privada é voltado para a formação de profissionais capazes de
-            gerir organizações tanto no setor público quanto no setor privado, com foco na eficiência, inovação e responsabilidade social. 
-        </p>
-        <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/6412768-hd_1080_1920_30fps.mp4"type="video/mp4">
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/8926984/8926984-sd_360_640_30fps.mp4" type="video/mp4">
         </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Administração Público-Privada</h1>
+            <p class="lead">O curso de Administração Público-Privada oferece uma formação sólida para gerenciar organizações tanto no setor público quanto no privado, desenvolvendo competências para interagir com os desafios contemporâneos de cada setor.</p>
         </div>
     </section>
 
     <!--Informações do Curso-->
-
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p> O curso de Administração Público-Privada em Portugal é uma formação académica voltada para
-                a preparação de profissionais capazes de atuar tanto na gestão de instituições públicas quanto no
-                setor privado. O objetivo do curso é dotar os estudantes de competências técnicas, estratégicas e legais
-                 para enfrentar os desafios de uma administração eficaz e ética em ambos os contextos.
-            </p>
-            <p>
-               <h3>Objectivo do Curso:</h3> 
-                <ol>Capacitar os estudantes para desempenhar funções de liderança e gestão em instituições,públicas e privadas em Portugal e na União Europeia.</ol>
-                <ol>Proporcionar conhecimentos em áreas essenciais, como ciências políticas, direito administrativo, gestão financeira pública, e estratégias organizacionais.;</ol>
-                <ol>Desenvolver competências de análise crítica e resolução de problemas em ambientes de governação e negócios;</ol>
-                <ol>Preparar os estudantes para compreender e aplicar a legislação portuguesa e europeia no âmbito administrativo.;</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p> O curso de Administração Público-Privada em Portugal tem uma duração típica de <strong>3 anos</strong>, anos (ou seja, 6 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para <strong>Mestrado Integrado </strong>  5 anos(300 ECTS)</p>
-            <p>Para <strong>Mestrado após Licenciatura</strong> a duração são mais dois anos adicionais(120 ECTS)</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <p>Os graduados em Administração Público-Privada têm um vasto leque de saídas profissionais, podendo atuar em diferentes setores, como:</p>
-            <ul>
-                <li>Administração Pública: Trabalhar em câmaras municipais, ministérios, institutos públicos, ou em organismos da União Europeia;</li>
-                <li>Gestão Empresarial: Exercício de funções administrativas e estratégicas em empresas privadas, nacionais ou multinacionais;</li>
-                <li>Ensino e Investigação: Contribuir academicamente para o desenvolvimento de políticas públicas e gestão inovadora;</li>
-               
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">O curso de Administração Público-Privada tem como objetivo fornecer aos alunos o conhecimento necessário para trabalhar em organizações públicas, privadas e no terceiro setor. Envolvendo gestão de políticas públicas, relações interinstitucionais e técnicas de administração corporativa.</p>
+
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Desenvolver habilidades para atuar tanto na gestão pública quanto privada, compreendendo as diferenças e interações entre os dois setores.</li>
+                <li class="list-group-item">Capacitar os estudantes para elaborar, implementar e avaliar políticas públicas e estratégias de gestão corporativa.</li>
+                <li class="list-group-item">Proporcionar formação em ética e responsabilidade social, com ênfase nas necessidades e desafios contemporâneos das organizações públicas e privadas.</li>
+                <li class="list-group-item">Desenvolver habilidades de liderança, comunicação e resolução de conflitos, essenciais para o ambiente organizacional.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
-
-            <li><strong>Universidade de Lisboa</strong> - Instituto Superior de Ciências Sociais e Políticas (ISCSP)</li>
-            <li><strong>Universidade do Minho</strong>- Escola de Economia e Gestão</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade de Economia</li>
-            <li><strong>Universidade de Aveiro</strong> - Departamento de Ciências Sociais, Políticas e do Território</li>
-            <li><strong>Instituto Politécnico de Lisboa</strong>- Escola Superior de Comunicação Social</li>
-            <li><strong>Instituto Politécnico do Porto</strong> - Escola Superior de Estudos Industriais e de Gestão</li>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p> O curso de Administração Público-Privada tem uma duração típica de <strong>3 anos</strong> (6 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
+            <p>Para um <strong>Mestrado</strong>, a duração é de 2 anos adicionais (120 ECTS), com foco em especializações em gestão pública ou estratégias corporativas avançadas.</p>
             
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Gestor de Políticas Públicas</li>
+                <li class="list-group-item">Consultor Organizacional</li>
+                <li class="list-group-item">Analista de Gestão Pública</li>
+                <li class="list-group-item">Gestor de Projetos de Parcerias Público-Privadas</li>
+                <li class="list-group-item">Especialista em Governança Corporativa</li>
+                <li class="list-group-item">Carreiras em agências governamentais, ONGs e empresas privadas.</li>
+            </ul>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Instituto de Ciências Sociais</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Direito</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Economia e Gestão</li>
+                <li class="list-group-item"><strong>Universidade Nova de Lisboa</strong> - Faculdade de Ciências Sociais e Humanas</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
