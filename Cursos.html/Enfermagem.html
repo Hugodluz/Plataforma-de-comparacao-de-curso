@@ -4,82 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enfermagem</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Enfermagem</h1>
-        <p>O curso de Enfermagem é uma formação essencial para aqueles que desejam dedicar suas carreiras ao cuidado da saúde e bem-estar das pessoas.
-        </p>
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/3197638/3197638-sd_640_360_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Enfermagem</h1>
+            <p class="lead">O curso de Enfermagem é uma formação essencial para aqueles que desejam dedicar suas carreiras ao cuidado da saúde e bem-estar das pessoas.</p>
+        </div>
     </section>
 
     <!--Informações do Curso-->
-
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p>Durante o curso, os estudantes exploram disciplinas como anatomia, fisiologia, farmacologia e saúde pública, além de desenvolverem competências em gestão de cuidados, comunicação e trabalho em equipa.
-                A formação prática ocorre em ambientes clínicos diversificados, permitindo contato direto com pacientes e situações reais, desde hospitais a comunidades, garantindo uma preparação abrangente e humanizada.
-            </p>
-            <p>
-                 <h3>Objectivo do Curso:</h3>
-                <ol>Formação Teórica: Proporcionar uma sólida base teórica nas áreas de ciências básicas (biologia, anatomia, farmacologia, etc.) e ciências de enfermagem (cuidados de enfermagem, gestão de saúde, ética e legislação da área).</ol>
-                <ol>Formação Prática: Desenvolver habilidades clínicas por meio de estágios em contextos reais de cuidado com os pacientes, promovendo a compreensão das necessidades de saúde individuais e comunitárias.</ol>
-                <ol>Atenção Humanizada: Capacitar os estudantes a trabalharem com empatia e atenção centrada no paciente, respeitando a individualidade de cada pessoa e as especificidades culturais e sociais.</ol>
-                <ol>Competências Técnicas: Formar profissionais com capacidade para realizar procedimentos técnicos, administrar medicamentos e realizar cuidados especializados, sempre com foco na segurança do paciente.</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p> O curso de Enfermagem em Portugal tem uma duração típica de <strong>4 anos</strong>, anos (ou seja, 8 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para <strong>Mestrado Integrado </strong> se aplicavel a duração média é de 5 anos(300 ECTS)</p>
-            <p>Para <strong>Mestrado após Licenciatura</strong> a duração são mais dois anos adicionais (300 ECTS)</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Enfermeiro/a em Hospitais e Clínicas</li>
-                <li>Enfermeiro/a Comunitário/a</li>
-                <li>Enfermeiro/a de Saúde Escolar</li>
-                <li>Enfermeiro/a de Saúde Mental</li>
-                <li>Enfermeiro/a de Cuidados Paliativos</li>
-                <li>Gestão e Liderança em Saúde</li>
-                <li>Investigação: Trabalhar em instituições de pesquisa para desenvolver novas práticas de cuidado, novas tecnologias ou abordagens inovadoras na área de enfermagem.</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">Durante o curso, os estudantes exploram disciplinas como anatomia, fisiologia, farmacologia e saúde pública, além de desenvolverem competências em gestão de cuidados, comunicação e trabalho em equipa.
+                A formação prática ocorre em ambientes clínicos diversificados, permitindo contato direto com pacientes e situações reais, desde hospitais a comunidades, garantindo uma preparação abrangente e humanizada.</p>
+
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Formação Teórica: Proporcionar uma sólida base teórica nas áreas de ciências básicas (biologia, anatomia, farmacologia, etc.) e ciências de enfermagem (cuidados de enfermagem, gestão de saúde, ética e legislação da área).</li>
+                <li class="list-group-item">Formação Prática: Desenvolver habilidades clínicas por meio de estágios em contextos reais de cuidado com os pacientes.</li>
+                <li class="list-group-item">Atenção Humanizada: Capacitar os estudantes a trabalharem com empatia e atenção centrada no paciente.</li>
+                <li class="list-group-item">Competências Técnicas: Formar profissionais com capacidade para realizar procedimentos técnicos, administrar medicamentos e realizar cuidados especializados.</li>
+            </ul>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p> O curso de Enfermagem tem uma duração típica de <strong>4 anos</strong>,(8 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
+            <p>Para <strong>Mestrado Integrado</strong>, a duração média é de 5 anos (300 ECTS).</p>
+            <p>Para <strong>Mestrado após Licenciatura</strong>, a duração são mais dois anos adicionais (300 ECTS).</p
+            
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Enfermeiro/a em Hospitais e Clínicas</li>
+                        <li class="list-group-item">Enfermeiro Comunitário/a</li>
+                        <li class="list-group-item">Enfermeiro de Saúde Escolar</li>
+                        <li class="list-group-item">Enfermeiro/a de Saúde Mental</li>
+            </ul>
 
-            <li><strong>Universidade de Lisboa </strong>- Escola Superior de Enfermagem </li>
-            <li><strong>Universidade do Porto</strong>- Escola Superior de Enfermagem São João</li>
-            <li><strong>Universidade de Coimbra</strong>-  Escola Superior de Enfermagem de Coimbra</li>
-            <li><strong>Instituto Politécnico de Lisboa </strong> -  Escola Superior de Saúde</li>
-            <li><strong>Instituto Politécnico do Porto</strong>Escola Superior de Saúde</li>
-            <li><strong>Universidade de Aveiro </strong>Escola Superior de Saúde</li>
-            <li><strong>Universidade de Minho</strong>Escola de Enfermagem</li>
-            <li><strong>Instituto Politécnico de Leiria</strong>Escola Superior de Saúde</li>
-            <li><strong>Universidade do Algarve</strong>Escola Superior de Saúde</li>
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Escola Superior de Enfermagem</li>
+                    <li class="list-group-item"><strong>Universidade do Porto</strong> - Escola Superior de Enfermagem São João</li>
+                    <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Escola Superior de Enfermagem de Coimbra</li>
+                    <li class="list-group-item"><strong>Instituto Politécnico de Lisboa</strong> - Escola Superior de Saúde</li>
+                    <li class="list-group-item"><strong>Universidade do Algarve</strong> - Escola Superior de Saúde</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
