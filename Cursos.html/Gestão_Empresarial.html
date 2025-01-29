@@ -4,83 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão Empresarial</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Gestão Empresarial</h1>
-        <p>
-            O curso de Gestão Empresarial em Portugal prepara profissionais para liderar organizações, otimizar processos e tomar decisões estratégicas no dinâmico mundo dos negócios.
-        </p>
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/5725960/5725960-sd_640_360_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Gestão Empresarial</h1>
+            <p class="lead">O curso de Gestão Empresarial prepara os alunos para liderar e administrar empresas, com foco em estratégias de crescimento, gestão de recursos e tomada de decisões eficazes no mundo corporativo.</p>
+        </div>
     </section>
 
-    <!--Informações do Curso-->
 
+    <!-- Informações do Curso -->
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p>
-                O curso de Gestão Empresarial oferece uma formação abrangente nas áreas de administração, economia, marketing, recursos humanos e estratégias organizacionais. 
-                Os estudantes desenvolvem competências analíticas, de liderança e comunicação, preparando-se para atuar em um ambiente empresarial global e competitivo
-            </p>
-            <p>
-                <h3>Objectivo do Curso:</h3>
-                <ol>Capacitar os estudantes com conhecimentos teóricos e práticos em áreas fundamentais da gestão, como finanças, logística e empreendedorismo;</ol>
-                <ol>Preparar profissionais para liderar e tomar decisões estratégicas que impactem positivamente a competitividade das organizações;</ol>
-                <ol>Promover o desenvolvimento de habilidades de resolução de problemas e gestão de pessoas em ambientes dinâmicos e multiculturais;</ol>
-                <ol>Incentivar o espírito empreendedor e a inovação no setor empresarial.</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p>O curso de Gestão Empresarial em Portugal tem uma duração típica de <strong>3 anos</strong>, anos (ou seja, 6 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para um <strong>Mestrado em Direito</strong> a duração é de 2 anos adicionais (120 ECTS),permitindo especialização em áreas como gestão estratégica, empreendedorismo ou marketing.</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Gestor de Empresas;</li>
-                <li>Consultor de Negócios;</li>
-                <li>Gestor de Recursos Humanos;</li>
-                <li>Analista Financeiro;</li>
-                <li>Gestor de Marketing;</li>
-                <li>Empreendedor;</li>
-                <li>Gestor de Projetos;</li>
-                <li>Diretor de Operações e Logística.</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p>O curso de Gestão Empresarial forma profissionais capazes de planejar, organizar e gerenciar recursos, pessoas e processos em organizações de diferentes portes e setores. Ele desenvolve competências para liderança, análise de mercado e tomada de decisões estratégicas.</p>
+
+            <h3 class="mt-4">Objetivos do Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Formar gestores com visão estratégica e capacidade de liderança.</li>
+                <li class="list-group-item">Ensinar técnicas de gestão financeira, marketing e operações.</li>
+                <li class="list-group-item">Capacitar os estudantes a analisar cenários econômicos e tomar decisões informadas.</li>
+                <li class="list-group-item">Promover habilidades de comunicação e trabalho em equipe no ambiente empresarial.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p>O curso de Gestão Empresarial em Portugal tem uma duração típica de <strong>3 anos</strong> (Licenciatura), com a possibilidade de prosseguir para um <strong>Mestrado</strong> de 2 anos adicionais, focado em especializações como Gestão de Projetos, Marketing ou Empreendedorismo.</p>
 
-            <li><strong>Universidade de Lisboa </strong>-  Instituto Superior de Economia e Gestão (ISEG)</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade de Economia</li>
-            <li><strong>Universidade de Coimbra</strong>- Faculdade de Economia</li>
-            <li><strong>Universidade de Nova Lisboa</strong> -Nova School of Business and Economics</li>
-            <li><strong>Universidade do Minho</strong>- Escola de Economia e Gestão</li>
-            <li><strong>Universidade Católica Portuguesa </strong>- Católica Lisbon School of Business and Economics</li>
-            
-            
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Gestor de Empresas</li>
+                        <li class="list-group-item">Consultor de Negócios</li>
+                        <li class="list-group-item">Analista Financeiro</li>
+                        <li class="list-group-item">Coordenador de Marketing</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Gestor de Projetos</li>
+                        <li class="list-group-item">Empreendedor</li>
+                        <li class="list-group-item">Analista de Recursos Humanos</li>
+                        <li class="list-group-item">Especialista em Logística</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Economia e Gestão</li>
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Instituto Superior de Economia e Gestão (ISEG)</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade Nova de Lisboa</strong> - Nova School of Business and Economics</li>
             </ul>
         </section>
     </main>
 
-    <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>copy; 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
