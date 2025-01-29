@@ -26,19 +26,37 @@
         <div class="hero-content">
             <h1>Bem-vindo ao UniChoice</h1>
             <p>Descubra e compare cursos universitario nas diversas áreas de estudo</p>
-            <form>
-                <input type="text"placeholder="Procure cursos,universidades...">
-                <button type="submit">Pesquisar</button>
+           
+            <!--Barra de Pesquisa-->
+            <form onsubmit="event.preventDefault();procurarCursos();">
+                <input type="text"id="procurarInput"placeholder="Procures Cursos e Universidades...">
+                <button type="submit">Pesquisar</button>     
             </form>
 
         </div>
+    </section>
+    <!--Tabela para Mostrar os Resultados-->
+    <section>
+        <table id="cursosTable"border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Universidade</th>
+                    <th>Duração</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                       <!--Os cursos devem aparecer aqui-->
+            </tbody>
+        </table>
     </section>
    
     <!--Categorias de Cursos-->
     <main>
         <div class="container">
             <video autoplay loop muted plays-inline class="background-clip" >
-                <source src="media/2086113-hd_1920_1080_30fps.mp4"type="video/mp4">
+                <source src="https://videos.pexels.com/video-files/2086113/2086113-sd_640_360_30fps.mp4"type="video/mp4">
             </video>
         </div>
         <!--Categoria:Engenharia-->
@@ -47,22 +65,50 @@
             <div class="course-grid">
                 <div class="course-card">
                     <h3>Engenharia Civil</h3>
+
                     <img src="https://images.pexels.com/photos/3771045/pexels-photo-3771045.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Engenharia Civil">
                     <p>Conheça os detalhes do curso e compare com outras opções</p>
+                    
+                    <!--Sistema de Avaliação por estrelas-->
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
+
                     <a href="engenharia-civil.html">Engenharia Civil</a>
                 </div>
                 <div class="course-card">
                     <h3>Engenharia Informática</h3>
                     <img src="https://images.pexels.com/photos/4705618/pexels-photo-4705618.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Engenharia Informatica">
                     <p>Explore conteúdos e escolha a melhor universidade para ti.</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="engenharia-informatica.html">Engenharia Informática</a>
                 </div>
                 <div class="course-card">
                     <h3>Bioengenharia</h3>
                     <img src="https://images.pexels.com/photos/3912513/pexels-photo-3912513.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Bioengenharia">
-                    <p>O O principal objetivo da Licenciatura em Bioengenharia é o de preparar recursos humanos com capacidade para abordarem de uma forma multidisciplinar problemas
+                    <p>O  principal objetivo da Licenciatura em Bioengenharia é o de preparar recursos humanos com capacidade para abordarem de uma forma multidisciplinar problemas
                         ...
                     </p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Bioengenharia.html">Bioengenharia</a>
 
                 </div>
@@ -77,6 +123,14 @@
                     <h3>Medicina</h3>
                     <img src="https://images.pexels.com/photos/8376277/pexels-photo-8376277.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Medicina">
                     <p>Informações completas sobre as melhores faculdades de Medicina </p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Medicina.html">Medicina</a>
 
                 </div>
@@ -84,6 +138,14 @@
                     <h3>Enfermagem</h3>
                     <img src="https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Enfermagem">
                     <p>Descubra oportunidades e instituições disponíveis</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Enfermagem.html">Enfermagem</a>
                 </div>
                 <div class="course-card">
@@ -91,6 +153,14 @@
                     <img src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Ciências Farmaceuticas">
                     <p>As Ciências Farmacêuticas, pela sua abrangencia
                          e multidisciplinaridade, são uma área científica de enorme relevo no âmbito das Ciências da Saúde.</p>
+                         <div class="star-rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-output">Avaliação</p>
                          <a href="Ciencias_Farmaceuticas.html">Ciencias Farmaceuticas</a>
                 </div>
                 <div class="course-card">
@@ -99,6 +169,14 @@
                     <p>Esta licenciatura visa preparar profissionais clinicamente aptos para administrar cuidados de prevenção
                         em Higiene Oral a utentes de todas as idades.
                     </p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Higene_oral.html">Higene Oral</a>
                 </div>
             </div>
@@ -113,18 +191,42 @@
                     <img src="https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=600"alt="Administração Público-Privada">
                     <p>A Licenciatura em Administração Público-Privada destina-se a conferir aos estudantes uma formação
                          rigorosa nos estudos em Administração</p>
+                         <div class="star-rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-output">Avaliação</p>
                          <a href="Adiministração.html">Adiministração Público-Privada</a>
                 </div>
                 <div class="course-card">
                     <h3>Criminologia e Justiça Criminal</h3>
                     <img src="https://media.istockphoto.com/id/1463346990/pt/foto/secret-agent-searching-for-criminal-movements-on-investigation-board.jpg?b=1&s=612x612&w=0&k=20&c=K72sjOmZdJpQ0R0Ge4JlUKY1WGidb_sHavWCyobLEXI="alt="Criminologia e Justiça Criminal">
                     <p>Proporciona ao licenciado uma sólida perspetiva do fenômeno criminal e dos fatores a ele inerentes</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Criminologia.html">Criminologia e Justiça Criminal</a>
                 </div>
                 <div class="course-card">
                     <h3>Direito</h3>
                     <img src="https://images.pexels.com/photos/28948052/pexels-photo-28948052/free-photo-of-estatua-da-senhora-justica-em-edificio-historico.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Direito">
                     <p>Esta licenciatura visa dotar os seus alunos dos instrumentos necessários à abordagem, compreensão e tratamento dos fenómenos jurídicos.</p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Direito.html">Direito</a>
                 </div>
             </div>
@@ -140,6 +242,14 @@
                         Gestão Empresarial é uma área do conhecimento voltada para a administração e organização de empresas, com o objetivo de planejar, implementar e monitorar
                          estratégias que garantam o sucesso e a sustentabilidade de uma organização.
                     </p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Gestão_Empresarial.html">Gestão Empresarial</a>
                 </div>
                 <div class="course-card">
@@ -148,6 +258,14 @@
                     <p>O curso de graduação em Economia é um curso de banda larga que fornece formação em economia, mas também na área da gestão, a que se juntam diversas áreas instrumentais
                         ...
                     </p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação</p>
                     <a href="Economia.html">Economia</a>
                 </div>
                 <div class="course-card">
@@ -156,6 +274,14 @@
                     <p>Contabilidade é o curso dedicado ao estudo e aplicação de técnicas, princípios e normas voltadas para o registro,
                         controle e análise das atividades financeiras, econômicas e patrimoniais de empresas e organizações.
                     </p>
+                    <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <p id="rating-output">Avaliação:0 estrelas</p>
                     <a href="Contabilidade.html">Contabilidade</a>
                     
                 </div>
@@ -168,5 +294,116 @@
         <p>2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
     
+    <!--JavaScript-->
+    <script>
+        const cursos = [
+            {name:"Engenharia Civil",universidade:"Universidade do Porto,Lisboa,Minho,Coimbra",duração:"5 anos"},
+            {name:"Medicina",universidade:"Universidade de Lisboa,Porto,Coimbra,Minho,Beira Interior",duração:"7 anos"},
+            {name:"Engenharia Informatica",universidade:"Universidade do Porto,Lisboa,Minho,Aveiro,Beira Interior",duração:"5 anos"},
+            {name:"Direito",universidade:"Universidade do Porto,Coimbra,Lisboa,Minho,Nova Lisboa",duração:"5 anos"},
+            {name:"Economia",universidade:"Universidade de Coimbra,Porto,Lisboa,Minho,Nova Lisboa",duração:"3 anos"},
+            {name:"Higene Oral",universidade:"Universidade de Lisboa,Porto,Coimbra,Instituto Politecnico de Lisboa",duração:"3 anos"},
+            {name:"Contabilidade",universidade:"Universidade do Minho,Porto,Lisboa,Fernando Pessoa",duração:"3 anos"},
+            {name:"Gestão Empresarial",universidade:"Universidade de Nova Lisboa,Lisboa,Porto,Minho",duração:"3 anos"},
+            {name:"Bioengenharia",universidade:"Universidade de Lisboa,Porto,Coimbra,Aveiro",duração:"3 anos"},
+            {name:"Administração",universidade:"Universidade do Porto,Lisboa,Nova Lisboa,Minho,Porto,Coimbra",duração:"3 anos"},
+            {name:"Enfermagem",universidade:"Universidade de Coimbra,Lisboa,Porto,Algarve",duração:"4 anos"},
+            {name:"Criminologia",universidade:"Escola de Direito - Minho,Universidade de Lisboa,Porto,Algarve",duração:"3 anos"},
+            {name:"Ciencias Farmaceuticas",universidade:"Universidade do Minho,Lisboa,Porto,Coimbra,Fernando Pessoa",duração:"5 anos"}
+        ];
+
+        //Função para exibir os cursos
+        function procurarCursos(){
+            const input = document.getElementById("procurarInput").value.toLowerCase();
+            const tableBody = document.querySelector("#cursosTable tbody");
+            tableBody.innerHTML = "" ; // Limpa as pesquisas anteriores
+        // Filtra os Cursos que têm a mesma palavra pesquisada no nome ou universidade
+        const filtredCursos = cursos.filter(curso => curso.name.toLowerCase().includes(input) || curso.universidade.toLowerCase().includes(input));
+        
+        // Adiciona os cursos filtrados à tabela
+        filtredCursos.forEach(curso=>{
+            const row = tableBody.insertRow();
+            row.insertCell(0).textContent = curso.name;
+            row.insertCell(1).textContent = curso.universidade;
+            row.insertCell(2).textContent = curso.duração;
+            
+        });
+
+        if(filtredCursos.length===0){
+            const row = tableBody.insertRow();
+            const cell = row.insertCell(0);
+            cell.colSpan = 4;
+            cell.textContent = "Nenhum Curso encontrado"
+            cell.style.textAlign = "center"
+        }
+
+        }
+
+        //Mensagem motivacional aleatorias
+        document.addEventListener("DOMContentLoaded",()=>{
+            const frases = [
+                "Nunca pare de aprender!📚",
+                "Teu futuro começa aqui! 🚀",
+                "Ecolha com sabedoria e sucesso virá!🌟",
+                "A educação transforma vidas! 🎓",
+                "O primeiro passo para o sucesso é tentar!💡",
+                "O importante é ser melhor que ontem 🫡",
+                "Calma, Roma não foi feita num só dia!🤓"
+
+            ];
+            const mensagem = frases[Math.floor(Math.random()*frases.length)];
+            const mensagemBox = document.createElement("p");
+            mensagemBox.textContent = mensagem;
+            mensagemBox.style.fontSize = "1.2em";
+            mensagemBox.style.fontStyle = "italic";
+            mensagemBox.style.textAlign = "center";
+            mensagemBox.style.marginTop = "15px";
+
+            //Adiciona Mensagem motivacional abaixo da barra de pesquisa
+            const form = document.querySelector("form");
+            form.parentNode.insertBefore(mensagemBox,form.nextSibling); // Insere logo abaixo do formulario
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const cursos = document.querySelectorAll('.course-card'); 
+
+    cursos.forEach((curso, index) => {
+        const stars = curso.querySelectorAll('.star'); // Seleciona apenas as estrelas do curso atual
+        const ratingOutput = curso.querySelector('.rating-output'); // Saída do curso específico
+        let currentRating = 0; // Inicializa a avaliação em 0 para cada curso
+
+        stars.forEach((star, starIndex) => {
+            // Efeito ao passar o mouse 
+            star.addEventListener('mouseover', () => {
+                highlightStars(stars, starIndex + 1);
+            });
+
+            // Remover destaque ao sair do mouse
+            star.addEventListener('mouseout', () => {
+                highlightStars(stars, currentRating);
+            });
+
+            // Registrar a avaliação ao clicar
+            star.addEventListener('click', () => {
+                currentRating = starIndex + 1; // Define a nova avaliação do curso
+                ratingOutput.textContent = `Avaliação: ${currentRating} estrelas`;
+            });
+        });
+    });
+
+    // Função para destacar as estrelas 
+    function highlightStars(stars, rating) {
+        stars.forEach((star, index) => {
+            star.classList.toggle('filled', index < rating);
+        });
+    }
+});
+
+       
+
+
+    </script>
+    
+   
 </body>
 </html>
