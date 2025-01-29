@@ -4,88 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Economia</title>
-    <link rel="stylesheet"href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
-    <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Ecomonia</h1>
-        <p>
-            O curso de Economia em Portugal forma profissionais capazes de analisar, interpretar e propor soluções para os desafios financeiros, empresariais e sociais que afetam o mundo globalizado.
-        </p>
-    </section>
-    <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/economia.mp4"type="video/mp4">
-        </video>
-        </div>
 
+    <!--Seção Hero para o Curso-->
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/30380306/13019849_640_360_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Economia</h1>
+            <p class="lead">O curso de Economia em Portugal oferece uma formação sólida para entender a dinâmica dos mercados, políticas econômicas e os principais desafios das economias globais e locais.</p>
+        </div>
+    </section>
 
     <!--Informações do Curso-->
-
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p>
-                O curso de Economia desenvolve competências em análise financeira, gestão de recursos, macro e microeconomia, além de habilidades quantitativas e de pesquisa. 
-                Os estudantes são preparados para entender o funcionamento de mercados, empresas e governos.
-            </p>
-            <p>
-                <h3>Objectivo do Curso:</h3>
-                <ol>Formar economistas com sólidos conhecimentos teóricos e práticos em economia, finanças e estatística;</ol>
-                <ol>Capacitar os estudantes a avaliar políticas econômicas e propor soluções inovadoras para os desafios sociais e econômicos;</ol>
-                <ol>Desenvolver competências analíticas e de pensamento crítico para atuar em mercados globais e em ambientes dinâmicos;</ol>
-                <ol>Promover uma visão ética e sustentável no uso de recursos e no impacto econômico das decisões empresariais e governamentais.</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p>O curso de Economia em Portugal tem uma duração típica de <strong>3 anos</strong>, anos (ou seja, 6 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para um <strong>Mestrado</strong>, a duração é de 2 anos adicionais (120 ECTS),permitindo especialização em áreas como políticas públicas, economia internacional ou finanças.</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>>Economista em empresas, bancos e consultoras;</li>
-                <li>Analista de Mercado;</li>
-                <li>Gestor de Políticas Públicas;</li>
-                <li>Consultor Financeiro;</li>
-                <li>>Investigador em Economia e Estatística;</li>
-                <li>Gestor de Projetos Econômicos;</li>
-                <li>>Especialista em Comércio Internacional;</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p class="mb-4">O curso de Economia é projetado para desenvolver habilidades analíticas e quantitativas nos estudantes, oferecendo ferramentas para compreender o comportamento dos agentes econômicos e as tendências dos mercados. Com uma base sólida em teoria econômica, estatística e econometria, os estudantes são preparados para enfrentar desafios econômicos modernos.</p>
+
+            <h3 class="mt-4">Objectivo do Curso:</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Formar economistas capacitados para analisar e propor soluções para questões econômicas complexas.</li>
+                <li class="list-group-item">Oferecer uma base sólida em teoria econômica, microeconomia, macroeconomia e economia internacional.</li>
+                <li class="list-group-item">Desenvolver habilidades práticas em análise de dados, econometria e modelagem econômica.</li>
+                <li class="list-group-item">Capacitar os estudantes a atuar em instituições públicas, privadas e internacionais.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p>O curso de Economia em Portugal tem uma duração típica de <strong>3 anos</strong> (6 semestres) no caso da Licenciatura. Um <strong>Mestrado</strong> em Economia pode ter duração de 2 anos adicionais (120 ECTS), proporcionando especialização em áreas como economia internacional, econometria e políticas públicas.</p>
+            
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Economista em empresas públicas ou privadas</li>
+                <li class="list-group-item">Consultor de Políticas Econômicas</li>
+                <li class="list-group-item">Analista de Dados e Planejamento</li>
+                <li class="list-group-item">Gestor de Projetos Econômicos</li>
+                <li class="list-group-item">Pesquisador em Organizações Acadêmicas e de Pesquisa</li>
+                <li class="list-group-item">Especialista em Finanças e Mercados</li>
+                <li class="list-group-item">Carreiras em organizações internacionais como o FMI, Banco Mundial, e União Europeia.</li>
+            </ul>
 
-            <li><strong>Universidade de Lisboa </strong>-  Instituto Superior de Economia e Gestão (ISEG)</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade de Economia</li>
-            <li><strong>Universidade de Coimbra</strong>- Faculdade de Economia</li>
-            <li><strong>Universidade de Nova Lisboa</strong> -Nova School of Business and Economics</li>
-            <li><strong>Universidade do Minho</strong>- Escola de Economia e Gestão</li>
-            <li><strong>Universidade Católica Portuguesa </strong>- Católica Lisbon School of Business and Economics</li>
-            
-            
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Instituto Superior de Economia e Gestão (ISEG)</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Economia</li>
+                <li class="list-group-item"><strong>Universidade Nova de Lisboa</strong> - Nova School of Business and Economics</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Economia e Gestão</li>
             </ul>
         </section>
     </main>
 
     <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
