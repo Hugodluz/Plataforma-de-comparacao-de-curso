@@ -3,75 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engenharia Civil - Unichoice</title>
-    <link rel="stylesheet"href="style2.css">
+    <title>Engenharia Civil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <!--Cabeçalho-->
-    <header>
+
+   <!--Cabeçalho-->
+   <header>
+    <div class="container d-flex justify-content-between align-items-center position-relative">
         <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+            <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
             </ul>
         </nav>
-    </header>
-    <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Engenharia Civil</h1>
-        <p> Explore todos os detalhes sobre o curso de Engenharia Civil, suas oportunidades e instituições que oferecem este programa.</p>
-    </section>
+    </div>
+</header>
 
-    <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/civil.mp4"type="video/mp4">
-        </video>
-        </div>
-    <!--Informações do Curso-->
-
+<!--Seção Hero para o Curso-->
+<section class="hero text-center text-white">
+    <video class="hero-video" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/8964796/8964796-sd_640_360_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="container position-relative">
+        <h1 class="display-4">Engenharia Civil </h1>
+        <p class="lead">O curso de Engenharia Civil proporciona uma formação sólida nas áreas de construção, estrutura e gestão de obras, com foco na inovação e sustentabilidade. Ao longo do curso, os alunos irão aprender a planejar, projetar e gerenciar grandes projetos de infraestrutura, como edifícios, pontes e estradas, sempre priorizando a segurança e a eficiência.</p>
+    </div>
+</section>
+    <!-- Informações do Curso -->
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p> O curso de Engenharia Civil é um dos mais procurados e reconhecidos no mercado de trabalho, com foco no desenvolvimento de projetos,
-                construções e gestão de infraestruturas.
-            </p>
-            <h3>Objectivos do Curso:</h3>
-            <ol>Desenvolver competências em cálculo estrutural, design de edifícios e gestão de obras;</ol>
-            <ol>Formar engenheiros capazes de planejar infraestruturas sustentáveis, respeitando normas de segurança e meio ambiente;</ol>
-            <ol>Capacitar profissionais para atuar em equipes multidisciplinares, coordenando projetos de engenharia de grande porte;</ol>
-            <ol>Proporcionar conhecimentos em tecnologia de materiais, modelagem computacional e técnicas avançadas de construção.</ol>
-            
-            <h3>Duração do Curso</h3>
-            <p> O curso de Engenharia Civil possui uma duração média de <strong>5 anos</strong>, dividido em 10 semestres, com formação teórica e prática.</p>
-            <p>Para um <strong>Mestrado após Licenciatura</strong>, a duração é de 2 anos adicionais (120 ECTS), permitindo uma especialização avançada.</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Engenheiro de Projectos</li>
-                <li>Gestor de Obras</li>
-                <li>Consultor Técnico</li>
-                <li> Planejador Urbano</li>
-                <li>Especialista em Estruturas</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p>O curso de Engenharia Civil oferece formação técnica e científica para projetar, construir e manter infraestruturas essenciais, como edifícios, pontes, estradas e sistemas hidráulicos. Os alunos adquirem competências em design estrutural, gestão de projetos, materiais de construção e sustentabilidade.</p>
+
+            <h3 class="mt-4">Objetivos do Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Capacitar estudantes para projetar, construir e gerenciar grandes obras de infraestrutura.</li>
+                <li class="list-group-item">Ensinar técnicas modernas de construção e uso de materiais sustentáveis.</li>
+                <li class="list-group-item">Formar profissionais aptos a solucionar desafios técnicos e ambientais.</li>
+                <li class="list-group-item">Proporcionar conhecimentos em legislação, ética e gestão de projetos.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p>O curso de Engenharia Civil em Portugal tem uma duração típica de <strong>5 anos</strong> (3 anos de licenciatura + 2 anos de mestrado integrado), totalizando 300 ECTS conforme o Processo de Bolonha.</p>
 
-            <li><strong>universidade de Lisboa</strong> - Campus Técnico</li>
-            <li><strong>Universidade do Porto</strong> - Faculdade de Engenharia</li>
-            <li><strong>Universidade de Coimbra</strong> - Departamento de Engenharia</li>
-            <li><strong>Instituto Superior Técnico</strong> - Lisboa </li>
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Engenheiro Civil em empresas de construção</li>
+                        <li class="list-group-item">Gestor de Projetos de Infraestruturas</li>
+                        <li class="list-group-item">Especialista em Sustentabilidade e Eficiência Energética</li>
+                        <li class="list-group-item">Engenheiro em Obras Públicas</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Consultor Técnico</li>
+                        <li class="list-group-item">Designer de Estruturas</li>
+                        <li class="list-group-item">Professor ou Investigador em Engenharia</li>
+                        <li class="list-group-item">Fiscalização e Controle de Qualidade em Obras</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Engenharia</li>
+                <li class="list-group-item"><strong>Instituto Superior Técnico</strong> - Universidade de Lisboa</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Departamento de Engenharia Civil</li>
+                <li class="list-group-item"><strong>Universidade do Minho</strong> - Escola de Engenharia</li>
+                <li class="list-group-item"><strong>Universidade da Beira Interior</strong> - Faculdade de Engenharia</li>
             </ul>
         </section>
     </main>
 
-    <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
 </body>
