@@ -3,86 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Higene Oral</title>
-    <link rel="stylesheet"href="style2.css">
+    <title>Higiene Oral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-     <!--Cabeçalho-->
-     <header>
-        <div class="logo">
-            <img src="assests/logo.webp"alt="logo do site">
+    <!--Cabeçalho-->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="assests/logo.webp" alt="Logo do Site" style="max-height: 50px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-white">Contactos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link text-white">Sobre</a></li>      
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!--Seção Hero para o Curso-->
-    <section class="hero">
-        <h1>Higene Oral</h1>
-        <p>O curso de Higiene Oral visa formar profissionais especializados em cuidados de prevenção e promoção de saúde bucal. 
-            O licenciado em Higiene Oral tem um papel essencial na prevenção de doenças dentárias e na promoção de hábitos saudáveis. 
-        </p>
-        <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip" >
-            <source src="media/6412768-hd_1080_1920_30fps.mp4"type="video/mp4">
+    <section class="hero text-center text-white">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/6528845/6528845-sd_506_960_25fps.mp4" type="video/mp4">
         </video>
+        <div class="container position-relative">
+            <h1 class="display-4">Higene Oral </h1>
+            <p class="lead">Cuide da saúde bucal e promova o bem-estar da sociedade.</p>
         </div>
     </section>
 
-    <!--Informações do Curso-->
-
+    <!-- Informações do Curso -->
     <main>
-        <section class="course-details">
-            <h2>Informações Gerais</h2>
-            <p> Bioengenharia é o curso que combina princípios das ciências biológicas com fundamentos da engenharia para desenvolver tecnologias,
-                e soluções inovadoras na área da saúde, biotecnologia e meio ambiente.
-                Trata-se de um campo interdisciplinar que capacita profissionais para resolver problemas complexos relacionados à vida, utilizando métodos avançados de engenharia.
-            </p>
-            <p>
-               <h3>Objectivo do Curso:</h3>
-                <ol>Formar profissionais capacitados para a realização de consultas de higiene oral e prevenção de doenças dentárias;</ol>
-                <ol>Desenvolver competências técnicas para o uso de equipamentos e materiais odontológicos;</ol>
-                <ol>Ensinar a promoção de saúde oral e hábitos saudáveis para a população;</ol>
-                <ol>Capacitar os estudantes para atuar em ambientes de trabalho multidisciplinares, com a colaboração de outros profissionais da área da saúde;</ol>
-            </p>
-            <h3>Duração do Curso</h3>
-            <p> O curso de Higiene Oral em Portugal tem uma duração típica de <strong>3 anos</strong>, anos (ou seja, 6 semestres) no caso da Licenciatura, conforme o Processo de Bolonha.</p>
-            <p>Para <strong>Mestrado Integrado </strong> se aplicavel a duração média é de 4 a 5 anos(300 ECTS)</p>
-            <p>Para <strong>Mestrado após Licenciatura</strong> a duração são mais dois anos adicionais (120 ECTS)</p>
-            
-            <h3>Saídas Profissionais</h3>
-            <ul>
-                <li>Consultórios e clínicas dentárias;</li>
-                <li>Hospitais e unidades de saúde;</li>
-                <li>Instituições de ensino e investigação científica na área da saúde bucal;</li>
-                <li>Empresas de produtos de saúde e higiene oral;</li>
-                <li>Em áreas relacionadas com a promoção de saúde pública e educação sanitária.</li>
+        <section class="course-details container my-5">
+            <h2 class="text-primary border-bottom pb-2">Informações Gerais</h2>
+            <p>O curso de Higiene Oral forma profissionais especializados na prevenção e tratamento das doenças da cavidade oral. O higienista oral atua na promoção da saúde bucal, educação do paciente e aplicação de técnicas de higiene.</p>
+
+            <h3 class="mt-4">Objetivos do Curso</h3>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Desenvolver competências na prevenção e tratamento das doenças orais.</li>
+                <li class="list-group-item">Capacitar profissionais para atuar na promoção da saúde bucal.</li>
+                <li class="list-group-item">Ensinar técnicas de limpeza, raspagem de tártaro e aplicação de flúor.</li>
+                <li class="list-group-item">Preparar o aluno para trabalhar em clínicas, hospitais e centros de saúde.</li>
             </ul>
 
-            <h3>Universidades que oferecem o Curso</h3>
-            <ul>
+            <h3 class="mt-4">Duração do Curso</h3>
+            <p>O curso de Higiene Oral tem uma duração típica de <strong>3 anos</strong> (Licenciatura), podendo ser complementado com especializações na área da odontologia preventiva.</p>
 
-            <li><strong>Universidade de Lisboa</strong> -  Faculdade de Medicina Dentária</li>
-            <li><strong>Universidade do Porto</strong>- Faculdade de Medicina Dentária</li>
-            <li><strong>Universidade de Coimbra</strong>- - Faculdade de Medicina</li>
-            <li><strong>Instituto Politécnico de Leiria</strong> - Escola Superior de Saúde</li>
-            <li><strong>Instituto Politécnico de Setúbal</strong>- Escola Superior de Saúde</li>
-            <li><strong>Universidade Fernando Pessoa</strong> - Faculdade de Ciências da Saúde</li>
-            <li><strong>Universidade de Évora</strong>- Escola Superior de Saúde</li>
+            <h3 class="mt-4">Saídas Profissionais</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Higienista Oral</li>
+                        <li class="list-group-item">Assistente em Clínicas Dentárias</li>
+                        <li class="list-group-item">Consultor em Saúde Oral</li>
+                        <li class="list-group-item">Técnico em Saúde Pública</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Docente na Área de Higiene Oral</li>
+                        <li class="list-group-item">Investigador na Área de Saúde Oral</li>
+                        <li class="list-group-item">Trabalho em Hospitais e Centros de Saúde</li>
+                        <li class="list-group-item">Empreendedor no Setor da Saúde Oral</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Universidades que oferecem o Curso</h3>
+            <ul class="list-group-flush mb-4">
+                <li class="list-group-item"><strong>Universidade de Lisboa</strong> - Faculdade de Medicina Dentária</li>
+                <li class="list-group-item"><strong>Universidade do Porto</strong> - Faculdade de Medicina Dentária</li>
+                <li class="list-group-item"><strong>Universidade de Coimbra</strong> - Faculdade de Medicina</li>
+                <li class="list-group-item"><strong>Instituto Politécnico de Lisboa</strong> - Escola Superior de Saúde</li>
             </ul>
         </section>
     </main>
 
-    <!--Rodapé-->
-    <footer class="site-footer">
-        <p>;2025 UniChoice - Portal de comparação de cursos.</p>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 UniChoice - Portal de comparação de cursos.</p>
     </footer>
 
-    
 </body>
 </html>
